@@ -1,0 +1,151 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #c9d2d9; 
+    font-family: 'Open Sans', Arial, sans-serif;
+    padding-bottom: 70px; /* Mencegah konten tertutup footer fixed */
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    background-color: #1a7398;
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Container Utama */
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* Kartu Deskripsi */
+.intro-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+#author-name {
+    text-align: center;
+    color: #1a7398;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #333333;
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 14px;
+}
+
+/* Kartu Form Biodata */
+.form-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.form-title {
+    color: #1a7398;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #6ed3a6;
+}
+
+/* Elemen Input Form */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333333;
+    font-size: 14px;
+}
+
+/* Mengatur input agar memenuhi lebar kartu */
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fafafa;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #1a7398;
+    background-color: #ffffff;
+}
+
+/* Radio Button */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.radio-label {
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Tombol Submit */
+#btn-submit.btn-primary {
+    width: 100%;
+    background-color: #1a7398;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+#btn-submit.btn-primary:hover {
+    background-color: #135773;
+}
+
+/* Footer Fixed */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #6ed3a6;
+    color: #000000;
+    text-align: center;
+}
+
+footer h5 {
+    margin: 0;
+    font-size: 16px;
+}

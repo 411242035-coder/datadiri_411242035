@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Web - Tugas 3</title>
+    <!-- Memanggil file CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>Tugas 3</h2>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="container">
+        
+        <!-- Bagian Nama & Deskripsi -->
+        <section class="intro-card">
+            <h3 id="author-name">Muhammad Zidan Fahmi</h3>
+            <p class="description">
+               <center>Tugas forum ke 4</center> 
+            </p>
+        </section>
+
+        <!-- Form Biodata -->
+        <section class="form-card">
+            <h3 class="form-title">Form Biodata</h3>
+            
+            <form id="biodata-form" action="#" method="POST">
+                
+                <!-- Input 1: Nama Lengkap -->
+                <div class="form-group">
+                    <label for="input-nama">Nama Lengkap</label>
+                    <input type="text" id="input-nama" class="form-control" placeholder="Masukkan nama lengkap" required>
+                </div>
+
+                <!-- Input 2: NIM -->
+                <div class="form-group">
+                    <label for="input-nim">NIM</label>
+                    <input type="text" id="input-nim" class="form-control" placeholder="Masukkan NIM" required>
+                </div>
+
+                <!-- Input 3: Jurusan -->
+                <div class="form-group">
+                    <label for="input-jurusan">Jurusan</label>
+                    <select id="input-jurusan" class="form-control" required>
+                        <option value="">-- Pilih Jurusan --</option>
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Sistem Informasi">Akuntasi</option>
+                        <option value="Teknik Elektro">Teknik Elektro</option>
+                        <option value="Manajemen Informatika">Sastra Ingggris</option>
+                    </select>
+                </div>
+
+                <!-- Input 4: Email -->
+                <div class="form-group">
+                    <label for="input-email">Email</label>
+                    <input type="email" id="input-email" class="form-control" placeholder="nama@email.com" required>
+                </div>
+
+                <!-- Input 5: Jenis Kelamin -->
+                <div class="form-group">
+                    <label>Jenis Kelamin</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" id="jk-pria" name="jenis_kelamin" value="Laki-laki" required> Laki-laki
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" id="jk-wanita" name="jenis_kelamin" value="Perempuan"> Perempuan
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Tombol Submit -->
+                <button type="submit" id="btn-submit" class="btn-primary">Kirim Data</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h5>PEMROGRAMAN WEB</h5>
+    </footer>
+
+</body>
+</html>
